@@ -8,7 +8,7 @@ where gender = 'F' and hire_date < '1990-01-01';
 
 
 select * from employees
-where last_name like '%F%'
+where last_name like 'F%'
 limit 50;
 
 
@@ -28,7 +28,7 @@ where emp_no = '10023';
 SET SQL_SAFE_UPDATES = 0;
 update employees 
 set hire_date = '2002-01-01'
-where last_name like '%P%' or first_name like '%P%';
+where last_name like 'P%' or first_name like 'P%';
 
 
 delete from employees 
